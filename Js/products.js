@@ -25,11 +25,16 @@ function renderProductsToPage() {
 
   console.log('🖼️ Products loaded:', products.map(p => `${p.name} (${p.image})`));
 
-  // Update products grid if it exists (show only 4 featured products on home page)
+  // Determine current page
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const isShopPage = currentPage === 'shop.html';
+
+  // Update products grid if it exists
   const productGrid = document.querySelector('.products-grid');
   if (productGrid) {
-    const featuredProducts = products.slice(0, 4);
-    renderProductCards(featuredProducts, productGrid);
+    // Show all products on shop page, only 4 on home page
+    const productsToShow = isShopPage ? products : products.slice(0, 4);
+    renderProductCards(productsToShow, productGrid);
   }
 
   // Update shop products section if it exists (show all products)
