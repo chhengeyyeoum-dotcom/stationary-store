@@ -77,7 +77,6 @@ function createProductCard(product) {
         <div class="product-img-wrap">
           ${badge}
           ${imageContent}
-          <button class="product-add" data-product-id="${product.id}" onclick="event.preventDefault(); event.stopPropagation();">View Product</button>
         </div>
         <div class="product-info">
           <div class="product-cat">${product.category}</div>
