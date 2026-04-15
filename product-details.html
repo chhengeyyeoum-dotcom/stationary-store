@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/product-details.css">
+    <link rel="stylesheet" href="css/about.css">
+  <title>Product Details</title>
+</head>
+<body>
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">Papier<span>&</span>Co</a>
+
+    <ul class="nav-links">
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="collections.html">Collections</a></li>
+    <li><a href="about.html">About</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-backdrop" id="navBackdrop"></div>
+    <div class="mobile-nav-panel">
+      <button class="mobile-nav-close" id="navClose">&#x2715;</button>
+      <ul class="mobile-nav-links">
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PRODUCT DETAILS SECTION -->
+  <section class="product-details-section">
+    <a href="shop.html" class="back-link">← Back to Shop</a>
+    
+    <div id="product-details-content" class="loading">
+      Loading product details...
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Papier & Co</h4>
+        <p>Thoughtfully crafted stationery from Phnom Penh.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">All Products</a></li>
+          <li><a href="collections.html">Collections</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Papier & Co. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.0"></script>
+  <script src="src/supabaseClient.js"></script>
+  <script src="Js/storage.js"></script>
+  <script src="Js/products.js"></script>
+  <script src="Js/auth.js"></script>
+  <script src="Js/cart.js"></script>
+  <script src="Js/product-details.js"></script>
+  <script src="Js/activeNav.js"></script>
+</body>
+</html>

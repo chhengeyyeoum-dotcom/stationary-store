@@ -1,0 +1,61 @@
+@import url('style.css');
+@import url('cart.css');
+
+/* ── FOOTER ── */
+.footer {
+    background: var(--charcoal);
+    color: var(--ivory);
+    padding: 60px 5vw 20px;
+    border-top: 1px solid var(--border);
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+.footer-section h4 {
+    font-family: var(--serif);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: var(--tan);
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footer-section a:hover {
+    color: var(--tan);
+}
+
+.footer-bottom {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(196, 168, 130, 0.2);
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+}
