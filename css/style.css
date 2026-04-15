@@ -405,7 +405,13 @@
   .cat-placeholder {
     width: 100%; height: 100%;
     display: flex; align-items: center; justify-content: center;
-    font-size: 4rem; opacity: 0.15;
+    font-size: 6rem; opacity: 0.9; color: var(--tan);
+  }
+
+  .cat-img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
   }
 
   .cat-overlay {
@@ -493,84 +499,8 @@
   }
 
   .spec-val { font-family: var(--serif); font-size: 16px; }
-
-  /* ── TESTIMONIALS ── */
-  .testimonials-grid {
-    display: grid; grid-template-columns: repeat(3,1fr);
-    gap: 32px;
-  }
-
-  .testimonial-card {
-    border-top: 1px solid var(--border);
-    padding-top: 24px;
-  }
-
-  .testimonial-stars {
-    color: var(--tan); font-size: 14px;
-    letter-spacing: 3px; margin-bottom: 16px;
-  }
-
-  .testimonial-body {
-    font-family: var(--serif);
-    font-size: 17px; font-style: italic;
-    font-weight: 300; line-height: 1.6;
-    margin-bottom: 20px;
-    color: var(--charcoal-mid);
-  }
-
-  .testimonial-author {
-    font-size: 12px; letter-spacing: 0.12em;
-    text-transform: uppercase; color: var(--muted);
-  }
-
-  /* ── NEWSLETTER ── */
-  .newsletter { background: var(--charcoal); }
-
-  .newsletter-inner {
-    max-width: 560px; margin: 0 auto;
-    text-align: center; padding: 80px 0;
-  }
-
-  .newsletter .section-tag { color: var(--tan); }
-
-  .newsletter-title {
-    font-family: var(--serif);
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 300; color: var(--ivory);
-    margin-bottom: 1rem;
-  }
-
-  .newsletter-body {
-    color: rgba(250,248,244,0.5);
-    margin-bottom: 2rem; font-size: 14px;
-  }
-
-  .newsletter-form {
-    display: flex; gap: 0;
-    border: 1px solid rgba(250,248,244,0.2);
-  }
-
-  .newsletter-input {
-    flex: 1; background: transparent;
-    border: none; outline: none;
-    padding: 14px 20px;
-    font-family: var(--sans); font-size: 14px;
-    color: var(--ivory);
-    font-weight: 300;
-  }
-
-  .newsletter-input::placeholder { color: rgba(250,248,244,0.3); }
-
-  .newsletter-btn {
-    background: var(--tan); border: none; cursor: pointer;
-    padding: 14px 28px;
-    font-family: var(--sans); font-size: 11px;
-    letter-spacing: 0.14em; text-transform: uppercase;
-    color: var(--charcoal); font-weight: 400;
-    white-space: nowrap;
-    transition: background 0.2s;
-  }
-
+ 
+ 
   .footer {
     background: var(--charcoal);
     color: var(--ivory);
@@ -629,63 +559,6 @@
     font-size: 13px;
 }
 
-  /* ── FOOTER ──
-  footer {
-    background: var(--ivory-deep);
-    border-top: 1px solid var(--border);
-    padding: 60px 8vw 30px;
-  }
-
-  .footer-grid {
-    display: grid;
-    grid-template-columns: 1.6fr 1fr 1fr 1fr;
-    gap: 48px; margin-bottom: 48px;
-  }
-
-  .footer-brand .nav-logo { display: block; margin-bottom: 1rem; }
-
-  .footer-brand p {
-    font-size: 13px; color: var(--muted);
-    line-height: 1.8; max-width: 220px;
-  }
-
-  .footer-heading {
-    font-size: 11px; letter-spacing: 0.16em;
-    text-transform: uppercase; color: var(--charcoal);
-    margin-bottom: 1rem; font-weight: 400;
-  }
-
-  .footer-links { list-style: none; }
-
-  .footer-links li { margin-bottom: 10px; }
-
-  .footer-links a {
-    font-size: 13px; color: var(--muted);
-    text-decoration: none; transition: color 0.2s;
-  }
-
-  .footer-links a:hover { color: var(--sage); }
-
-  .footer-bottom {
-    border-top: 1px solid var(--border);
-    padding-top: 24px;
-    display: flex; justify-content: space-between;
-    align-items: center; flex-wrap: wrap; gap: 12px;
-  }
-
-  .footer-copy {
-    font-size: 12px; color: var(--muted);
-  }
-
-  .footer-socials { display: flex; gap: 1.2rem; }
-
-  .footer-socials a {
-    font-size: 12px; letter-spacing: 0.1em;
-    text-transform: uppercase; color: var(--muted);
-    text-decoration: none; transition: color 0.2s;
-  }
-
-  .footer-socials a:hover { color: var(--sage); }*/
 
   /* ── MOBILE NAV DRAWER ── */
   .mobile-nav {
