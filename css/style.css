@@ -66,6 +66,12 @@
 
   .nav-links a:hover { color: var(--sage); }
 
+  .nav-links a.active {
+    color: var(--sage);
+    border-bottom: 2px solid var(--sage);
+    padding-bottom: 4px;
+  }
+
   .nav-actions {
     display: flex; align-items: center; gap: 1.2rem;
   }
